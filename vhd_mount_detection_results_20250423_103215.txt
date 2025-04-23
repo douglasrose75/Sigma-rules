@@ -1,0 +1,32 @@
+Test Results for Sigma Rule: Detect VHD/VHDX Mount (Potential CVE-2025-24985 Exploit)
+Date/Time: 2025-04-23 10:32:15
+Log File: combined_sample_logs.json
+================================================================================
+
+Log 1: DETECTED (matches rule)
+  Details: EventID=1, VhdFileName=C:\Users\Admin\Downloads\backup.vhd
+
+Log 2: DETECTED (matches rule)
+  Details: EventID=12, VhdFileName=D:\VirtualDisks\snapshot.vhdx
+
+Log 3: DETECTED (matches rule)
+  Details: EventID=1, VhdFileName=C:\Users\User1\Documents\test.vhdx
+
+Log 4: DETECTED (matches rule)
+  Details: EventID=12, VhdFileName=E:\Archives\old.vhd
+
+Log 5: Not detected
+  Details: EventID=1, VhdFileName=C:\Users\Admin\Downloads\backup.iso
+
+Log 6: Not detected
+  Details: EventID=5, VhdFileName=C:\Users\Admin\Downloads\backup.vhd
+
+Log 7: Not detected
+  Details: EventID=12, VhdFileName=D:\VirtualDisks\snapshot.vhdx_backup
+
+Log 8: Not detected
+  Details: EventID=1, VhdFileName=
+
+
+================================================================================
+SUMMARY: 4/8 logs matched the rule (50.0%)
